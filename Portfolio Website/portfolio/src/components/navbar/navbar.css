@@ -9,7 +9,7 @@
 }
 
 .navbar-logo {
-    margin-left: 128px;
+  margin-left: 128px;
 }
 .navbar-menu {
   margin-left: 1rem;
@@ -17,17 +17,17 @@
   position: relative;
 }
 .navbar-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 120px;
-    color: var(--color-text);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 120px;
+  color: var(--color-text);
 }
 
 .navbar-links p,
 .navbar-menu_container p {
-  color: #fff;
+  color: var(--color-text);
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
@@ -38,6 +38,94 @@
   cursor: pointer;
 }
 
+.navbar-links a,
+.navbar-menu_container a {
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 21px;
+  text-transform: capitalize;
+
+  margin: 0 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-links a:active,
+.navbar-menu_container a:active {
+  color: var(--color-mark-text);
+}
+
+@media screen and (max-width: 1040px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-logo {
+    margin: 16px 0px;
+  }
+  .navbar-links {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+navbar-menu svg {
+  cursor: pointer;
+}
+
+.navbar-menu_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-menu_container p {
+  margin: 1rem 0;
+}
+
+/* @media screen and (max-width: 600px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: flex;
+  }
+}
+/* @media screen and (max-width: 1050px) {
+  .gpt3__navbar-links_container {
+    display: none;
+  }
+
+  .gpt3__navbar-menu {
+    display: flex;
+  }
+} */
 
 /* .navbar {
   display: flex;

@@ -10,12 +10,13 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
+      
       <div className="navbar-logo">
         <img src={logo} alt="logo" />
       </div>
       <div className="navbar-links">
         {/* <div className="navbar-links_container"> */}
-          <p>
+          <p> 
             <a href="#aboutme">About Me</a>
           </p>
           <p>
