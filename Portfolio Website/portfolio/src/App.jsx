@@ -11,7 +11,7 @@ const App = () => {
       {/* hello */}
       <div className="bg">
         <Navbar />
-        {/* <Header /> */}
+        <Header />
       </div>
     </div>
   );
