@@ -2,6 +2,7 @@
 import "./header.css";
 import photo from "../../assets/photo.png";
 import icon from "../../assets/icon.png";
+// import tejas from "../../assets/photo.svg";
 const Header = () => {
   return (
     <div className="header" id="aboutme">
@@ -25,6 +26,7 @@ const Header = () => {
           <div className="header__image">
             <img src={photo} alt="photo" />
           </div>
+          {/* <img src={tejas} alt="photo" /> */}
         </div>
       </div>
       <div className="header__content-bottom">
