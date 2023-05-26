@@ -4,7 +4,7 @@ import photo from "../../assets/photo.png";
 import icon from "../../assets/icon.png";
 const Header = () => {
   return (
-    <div className="header" id="#aboutme">
+    <div className="header" id="aboutme">
       <div className="header__content-top">
         <div className="header__content-left">
           <div className="header__info">
@@ -28,16 +28,18 @@ const Header = () => {
         </div>
       </div>
       <div className="header__content-bottom">
-        <div className="header__content-bottom-icon">
-          <img src={icon} alt="icon" />
-        </div>
-        <div className="header__content-bottom-text">
-          <p>
-            A few years ago, I became interested in developing websites and
-            interfaces. Since then, I have been steadily improving my skills.
-            Now I am developing websites and web applications to order or for
-            myself.
-          </p>
+        <div className="header__content-bottom-info">
+          <div className="header__content-bottom-icon">
+            <img src={icon} alt="icon" />
+          </div>
+          <div className="header__content-bottom-text">
+            <p>
+              A few years ago, I became interested in developing websites and
+              interfaces. Since then, I have been steadily improving my skills.
+              Now I am developing websites and web applications to order or for
+              myself.
+            </p>
+          </div>
         </div>
       </div>
     </div>

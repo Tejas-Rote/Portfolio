@@ -1,10 +1,24 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+  /* overflow-x: hidden; */
+}
+.app {
+  overflow-y: scroll;
+}
+.app::-webkit-scrollbar {
+  display: none;
+}
 
-  .bg {
-    background-color: var(--color-dark-bg);
-  }
+/* Hide scrollbar for IE, Edge and Firefox */
+.app {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.bg {
+  background-color: var(--color-dark-bg);
+}
