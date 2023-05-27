@@ -111,23 +111,65 @@
   }
 }
 
+.header__image {
+  position: relative;
+}
 
+.header__blob {
+  /* position: absolute; */
+  width: 400px;
+  height: 4 00px;
+}
+
+#blob {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: relative;
+  /* Adjust width and height to fit your SVG images */
+  width: 500px;
+  height: 300px;
+}
+
+.b1 {
+  /* Adjust positioning properties and other styles as needed */
+  position: absolute;
+}
+
+.b1:nth-child(1) {
+  /* Adjust the z-index value to control stacking order */
+  z-index: 2;
+}
+
+.b1:nth-child(2) {
+  /* Adjust the z-index value to control stacking order */
+  z-index: 1;
+}
+.mask1 {
+  -webkit-mask-image: url(../../assets/blobanimation.svg);
+  mask-image: url(../../assets/blobanimation.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
 .header__content-right {
   display: flex;
   flex-direction: row;
+  min-height: 600px;
   justify-content: center;
   align-items: center;
-    animation-name: slide;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    background-image: url("../../assets/background.png");
-    /* background-repeat: repeat-y;00 */
-    background-position: left bottom;
-    background-size: 120%;
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-image: url("../../assets/background.png");
+  /* background-repeat: repeat-y;00 */
+  background-position: left bottom;
+  background-size: 120%;
 }
-
-
 
 .header__content-bottom {
   display: flex;

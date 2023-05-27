@@ -17,7 +17,9 @@ const Work = (props) => {
     <div className="work">
       <div className={props.flexStyle}>
         <div className="left">
-          <img src={props.imgsrc} alt="image" />
+          <div className="image-container">
+            <img src={props.imgsrc} alt="image" className="image" />
+          </div>
         </div>
         <div className="right">
           <div className="heading">

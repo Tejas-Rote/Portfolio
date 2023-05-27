@@ -1,7 +1,8 @@
 // import React from 'react'
 import { Work } from "../../components";
 import "./myProject.css";
-import NFT from "../../assets/nft.png";
+import NFT from "../../assets/nft-alt.png";
+import gpt3 from "../../assets/gpt3-alt.png";
 const MyProject = () => {
   return (
     <div className="projects" id="projects">
@@ -17,37 +18,16 @@ const MyProject = () => {
         <div className="content">
           <Work
             name={"NFT Preview"}
-            imgsrc={NFT}
+            imgsrc={gpt3}
             stack={"MERN stack"}
             info={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolores veritatis. Culpa voluptatibus autaccusamus, iure repudiandae laboriosam optio obcaecati recusandaedolor mollitia ipsa dolores facilis, possimus incidunt ipsam eaque."
             }
             code={"https://github.com/Tejas-Rote/React-Projects"}
             live={"links2"}
-            flexStyle={'projectCard'}
+            flexStyle={"projectCard"}
           />
-          <Work
-            name={"NFT Preview"}
-            imgsrc={NFT}
-            stack={"MERN stack"}
-            info={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolores veritatis. Culpa voluptatibus autaccusamus, iure repudiandae laboriosam optio obcaecati recusandaedolor mollitia ipsa dolores facilis, possimus incidunt ipsam eaque."
-            }
-            code={"https://github.com/Tejas-Rote/React-Projects"}
-            live={"links2"}
-            flexStyle={'projectCardR'}
 
-          />
-          <Work
-            name={"NFT Preview"}
-            imgsrc={NFT}
-            stack={"MERN stack"}
-            info={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolores veritatis. Culpa voluptatibus autaccusamus, iure repudiandae laboriosam optio obcaecati recusandaedolor mollitia ipsa dolores facilis, possimus incidunt ipsam eaque."
-            }
-            code={"https://github.com/Tejas-Rote/React-Projects"}
-            flexStyle={'projectCard'}
-          />
           <Work
             name={"NFT Preview"}
             imgsrc={NFT}
@@ -57,10 +37,8 @@ const MyProject = () => {
             }
             code={"https://github.com/Tejas-Rote/React-Projects"}
             live={"links2"}
-            flexStyle={'projectCardR'}
-
+            flexStyle={"projectCardS"}
           />
-          
         </div>
       </div>
     </div>

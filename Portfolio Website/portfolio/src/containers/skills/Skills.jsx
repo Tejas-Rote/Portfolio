@@ -19,12 +19,16 @@ const Skills = () => {
         </div>
         <div className="skills__content-tech">
           <div className=" skills__content-tech__card ">
-            <Cards imgsrc={html} title="HTML" />
-            <Cards imgsrc={javaS} title="JavaScript" />
-            <Cards imgsrc={css3} title="CSS3" />
-            <Cards imgsrc={git} title="Git" />
-            <Cards imgsrc={arduino} title="Arduino" />
-            <Cards imgsrc={mongodb} title="MongoDB" />
+            <div className="row">
+              <Cards imgsrc={html} title="HTML" />
+              <Cards imgsrc={javaS} title="JavaScript" />
+              <Cards imgsrc={css3} title="CSS3" />
+            </div>
+            <div className="row">
+              <Cards imgsrc={git} title="Git" />
+              <Cards imgsrc={arduino} title="Arduino" />
+              <Cards imgsrc={mongodb} title="MongoDB" />
+            </div>
           </div>
         </div>
       </div>

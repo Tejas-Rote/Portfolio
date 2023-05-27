@@ -10,9 +10,9 @@ const Card = (props) => {
         <div className="card__content-logo">
           <img src={props.imgsrc} alt="logo" />
         </div>
-        <div className="card__content-name">
+        <div className=" card__content-name  ">
           <p>{props.title}</p>
-          </div>
+        </div>
       </div>
     </div>
   );

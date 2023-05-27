@@ -3,6 +3,10 @@ import "./header.css";
 import photo from "../../assets/photo.png";
 import icon from "../../assets/icon.png";
 // import tejas from "../../assets/photo.svg";
+import Tejas from "../../assets/Tejas_Photo.jpg";
+import b1 from "../../assets/blobanimation.svg";
+import b2 from "../../assets/blobanimation2.svg";
+import blob from "../../assets/blobanimation.svg";
 const Header = () => {
   return (
     <div className="header" id="aboutme">
@@ -24,9 +28,16 @@ const Header = () => {
         </div>
         <div className="header__content-right">
           <div className="header__image">
-            <img src={photo} alt="photo" />
+            <div className="parent"></div>
+              {/* <img src={photo} alt="photo" /> */}
+            <div id="blob">
+              {/* tejas */}
+              <div className="mask1 b1">
+              <img src={Tejas} width="400" height="400" />
+            </div>
+            <img src={b2} alt="blob" className="b1" />
+            </div>
           </div>
-          {/* <img src={tejas} alt="photo" /> */}
         </div>
       </div>
       <div className="header__content-bottom">

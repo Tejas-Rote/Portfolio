@@ -8,7 +8,18 @@
   background-color: var(--color-light-bg);
   width: 200px;
   height: 300px;
+  transition: all 0.3s ease;
 }
+.card:hover  {
+  width: 300px;
+  height: 400px;
+  margin: 0rem;
+
+}
+.card:hover .card__content-name {
+  color: var(--color-mark-subtext);
+}
+
 
 .card__content {
   display: flex;
@@ -22,10 +33,21 @@
 
 
 
-.card__content-logo {
+.card__content-logo  {
   margin-bottom: 2rem;
   height: 128px;
   width: 128px;
+  transition: all 0.3s ease;
+
+}
+
+
+.card__content-logo img {
+  margin-bottom: 2rem;
+  height: 128px;
+  width: 128px;
+  transition: all 0.3s ease;
+
 }
 
 .card__content-name {
@@ -34,7 +56,6 @@
   font-weight: 200;
   font-size: 32px;
   line-height: 34px;
-  /* identical to box height */
-
+  transition: all 0.3s ease;
   color: #ffffff;
 }

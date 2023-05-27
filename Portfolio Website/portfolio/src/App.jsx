@@ -2,7 +2,13 @@
 // import CustomCard from "./components/CustomCard";
 import "./App.css";
 import { Navbar, Cards } from "./components/index.js";
-import { Header, Skills, Footer, MyProject } from "./containers/index.js";
+import {
+  Header,
+  Skills,
+  Footer,
+  MyProject,
+  PetProject,
+} from "./containers/index.js";
 // import { Header } from "./containers/";
 const App = () => {
   return (
@@ -14,6 +20,7 @@ const App = () => {
       <MyProject />
       <Footer />
       </div>
+      {/* <PetProject /> */}
     </div>
   );
 };
