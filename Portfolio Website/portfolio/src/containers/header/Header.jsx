@@ -27,15 +27,16 @@ const Header = () => {
           </div>
         </div>
         <div className="header__content-right">
+
           <div className="header__image">
             <div className="parent"></div>
-              {/* <img src={photo} alt="photo" /> */}
+            {/* <img src={photo} alt="photo" /> */}
             <div id="blob">
               {/* tejas */}
               <div className="mask1 b1">
-              <img src={Tejas} width="400" height="400" />
-            </div>
-            <img src={b2} alt="blob" className="b1" />
+                <img src={Tejas} width="400" height="400" />
+              </div>
+              <img src={b2} alt="blob" className="b1" />
             </div>
           </div>
         </div>

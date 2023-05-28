@@ -1,8 +1,12 @@
 // import React from 'react'
-import { Work } from "../../components";
+import { Gallery, Work } from "../../components";
 import "./myProject.css";
 import NFT from "../../assets/nft-alt.png";
+import nft from "../../assets/nft.png";
 import gpt3 from "../../assets/gpt3-alt.png";
+import uav from "../../assets/teamuav-alt.png";
+import order from "../../assets/OrderSummary-alt.png";
+import faq from "../../assets/faq.png";
 const MyProject = () => {
   return (
     <div className="projects" id="projects">
@@ -17,28 +21,55 @@ const MyProject = () => {
       <div className="bottom">
         <div className="content">
           <Work
-            name={"NFT Preview"}
+            name={"GPT-3"}
             imgsrc={gpt3}
-            stack={"MERN stack"}
+            stack={"MERN "}
             info={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolores veritatis. Culpa voluptatibus autaccusamus, iure repudiandae laboriosam optio obcaecati recusandaedolor mollitia ipsa dolores facilis, possimus incidunt ipsam eaque."
+              "Discover GPT-3 and OpenAI on our website. Stay updated with the latest news, breakthroughs, and applications of this powerful language model. Explore the world of AI and its impact with us."
             }
-            code={"https://github.com/Tejas-Rote/React-Projects"}
-            live={"links2"}
+            code={"https://github.com/TeamUAV/Website"}
+            live={"https://www.teamuav.in"}
             flexStyle={"projectCard"}
           />
 
           <Work
-            name={"NFT Preview"}
-            imgsrc={NFT}
-            stack={"MERN stack"}
+            name={"Team UAV"}
+            imgsrc={uav}
+            stack={"MERN "}
             info={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolores veritatis. Culpa voluptatibus autaccusamus, iure repudiandae laboriosam optio obcaecati recusandaedolor mollitia ipsa dolores facilis, possimus incidunt ipsam eaque."
+              "Introducing Team UAV! We are a dedicated college team passionate about unmanned aerial vehicles (UAVs). Visit our website to get to know us better. Learn about our team members, the various departments within our team, and our past achievements. Discover the exciting world of UAVs and our contributions to the field. Join us as we explore the possibilities of this cutting-edge technology and showcase our passion for innovation and teamwork."
             }
             code={"https://github.com/Tejas-Rote/React-Projects"}
             live={"links2"}
-            flexStyle={"projectCardS"}
+            flexStyle={"projectCardR"}
           />
+          <Work
+            name={"FAQ Accordian"}
+            imgsrc={faq}
+            stack={"HTML CSS & JS"}
+            info={
+              "Discover GPT-3 and OpenAI on our website. Stay updated with the latest news, breakthroughs, and applications of this powerful language model. Explore the world of AI and its impact with us."
+            }
+            code={"https://github.com/TeamUAV/Website"}
+            live={"https://www.teamuav.in"}
+            flexStyle={"projectCard"}
+          />
+          <div className="row">
+            <Gallery
+              name={"NFT Card"}
+              imgsrc={NFT}
+              info={"NFT Preview Card "}
+              code={"https://github.com/Tejas-Rote/React-Projects"}
+              live={"links2"}
+            />
+            <Gallery
+              name={"Order Card"}
+              imgsrc={order}
+              info={"Order Summary Card "}
+              code={"https://github.com/Tejas-Rote/React-Projects"}
+              live={"links2"}
+            />
+          </div>
         </div>
       </div>
     </div>

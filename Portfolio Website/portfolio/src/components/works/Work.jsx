@@ -26,7 +26,7 @@ const Work = (props) => {
             <h2>{props.name}</h2>
           </div>
           <div className="techStack">
-            <div className="lang">MERN stack </div>
+            <div className="lang">{props.stack}</div>
           </div>
           <div className="hr" />
           <div className="info">

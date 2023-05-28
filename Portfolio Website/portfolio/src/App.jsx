@@ -1,7 +1,7 @@
 // import React from "react";
 // import CustomCard from "./components/CustomCard";
 import "./App.css";
-import { Navbar, Cards } from "./components/index.js";
+import { Navbar, Cards, Gallery } from "./components/index.js";
 import {
   Header,
   Skills,
@@ -9,18 +9,19 @@ import {
   MyProject,
   PetProject,
 } from "./containers/index.js";
-// import { Header } from "./containers/";
+
 const App = () => {
   return (
     <div className="app">
       <div className="bg">
         <Navbar />
         <Header />
-      <Skills />
-      <MyProject />
-      <Footer />
+        <Skills />
+        <MyProject />
+        <Footer />
       </div>
       {/* <PetProject /> */}
+      {/* <Gallery /> */}
     </div>
   );
 };
