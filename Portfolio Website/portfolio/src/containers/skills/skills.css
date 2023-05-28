@@ -11,6 +11,8 @@
   align-items: center;
   justify-content: center;
   padding: 64px;
+  margin-top: 2rem;
+
 }
 .skills__content-title {
   margin-bottom: 28px;
@@ -48,6 +50,17 @@
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin: 0rem 1rem;
 }
+
+@media screen and (max-width:1040px) {
+  .skills__content {
+    margin-top: 6rem;
+  }
+  
+}
+
+

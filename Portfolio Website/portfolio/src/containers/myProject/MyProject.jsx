@@ -27,7 +27,7 @@ const MyProject = () => {
             info={
               "Discover GPT-3 and OpenAI on our website. Stay updated with the latest news, breakthroughs, and applications of this powerful language model. Explore the world of AI and its impact with us."
             }
-            code={"https://github.com/TeamUAV/Website"}
+            code={"https://github.com/Tejas-Rote/React-Projects"}
             live={"https://www.teamuav.in"}
             flexStyle={"projectCard"}
           />
@@ -39,7 +39,7 @@ const MyProject = () => {
             info={
               "Introducing Team UAV! We are a dedicated college team passionate about unmanned aerial vehicles (UAVs). Visit our website to get to know us better. Learn about our team members, the various departments within our team, and our past achievements. Discover the exciting world of UAVs and our contributions to the field. Join us as we explore the possibilities of this cutting-edge technology and showcase our passion for innovation and teamwork."
             }
-            code={"https://github.com/Tejas-Rote/React-Projects"}
+            code={"https://github.com/TeamUAV/Website"}
             live={"links2"}
             flexStyle={"projectCardR"}
           />
@@ -48,7 +48,7 @@ const MyProject = () => {
             imgsrc={faq}
             stack={"HTML CSS & JS"}
             info={
-              "Discover GPT-3 and OpenAI on our website. Stay updated with the latest news, breakthroughs, and applications of this powerful language model. Explore the world of AI and its impact with us."
+              "Experience our FAQ accordion app sample on our website. Explore the intuitive interface, expand and collapse sections effortlessly, and discover the benefits of this user-friendly design for presenting frequently asked questions. "
             }
             code={"https://github.com/TeamUAV/Website"}
             live={"https://www.teamuav.in"}

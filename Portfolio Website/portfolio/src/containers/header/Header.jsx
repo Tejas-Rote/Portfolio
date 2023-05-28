@@ -7,6 +7,7 @@ import Tejas from "../../assets/Tejas_Photo.jpg";
 import b1 from "../../assets/blobanimation.svg";
 import b2 from "../../assets/blobanimation2.svg";
 import blob from "../../assets/blobanimation.svg";
+import redirect from "../../assets/redirect.png";
 const Header = () => {
   return (
     <div className="header" id="aboutme">
@@ -53,6 +54,14 @@ const Header = () => {
               Now I am developing websites and web applications to order or for
               myself.
             </p>
+          </div>
+          <div className="header__content-bottom-btn">
+            <a href="https://drive.google.com/file/d/1ocaZK2CTB2xL_HPhd9f6LqhyejDIMF_e/view?usp=share_link">
+              Resume
+            <span>
+              <img src={redirect} alt="redirect" />
+            </span>
+            </a>
           </div>
         </div>
       </div>
