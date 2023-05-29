@@ -6,6 +6,10 @@ import "./navbar.css";
 import { useState } from "react";
 
 const Navbar = () => {
+
+
+
+
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -17,7 +21,7 @@ const Navbar = () => {
         <div className="navbar-links">
           {/* <div className="navbar-links_container"> */}
           <p>
-            <a href="#aboutme">About Me</a>
+            <a href="#aboutme" className="active">About Me</a>
           </p>
           <p>
             <a href="#skills">Skills</a>
@@ -49,7 +53,7 @@ const Navbar = () => {
             />
           )}
           {toggleMenu && (
-            <div className="navbar-menu_container scale-up-center">
+            <div className="navbar-menu_container">
               <div className="navbar-menu_container-links">
                 <p>
                   <a href="#aboutme">About Me</a>

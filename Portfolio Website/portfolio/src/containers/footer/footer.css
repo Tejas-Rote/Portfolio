@@ -95,3 +95,31 @@
   justify-content: center;
   margin: 0rem 1rem;
 }
+
+
+@media screen and (max-width:900px) {
+  .footer__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__content-left{
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .footer__content-contacts-links_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__content-contacts {
+    align-items: center;
+  }
+
+  .footer__content-left{
+    max-width: 400px;
+  }
+}
+

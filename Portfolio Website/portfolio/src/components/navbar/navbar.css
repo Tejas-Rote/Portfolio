@@ -4,7 +4,6 @@
   width: 100%;
   z-index: 3;
   /* display: block; */
-  
 }
 .navbar {
   display: flex;
@@ -64,10 +63,62 @@
   text-decoration: none;
 }
 
-.navbar-links a:active,
-.navbar-menu_container a:active {
-  color: var(--color-mark-text);
+a:hover {
+  color: var(--color-mark-subtext);
 }
+
+/* .navbar-links a.active {
+  color: var(--color-mark-subtext);
+} */
+
+navbar-menu svg {
+  cursor: pointer;
+}
+
+.navbar-menu_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+  background: var(--color-dark-bg);
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  margin-top: 0rem;
+  min-width: 110px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-menu_container p {
+  margin: 1rem 0;
+}
+
+/* .navbar-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem;
+  padding: 0rem;
+}
+.navbar-menu_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 0rem;
+  padding: 0;
+  background-color: antiquewhite;
+}
+
+.navbar-menu_container-links {
+  margin: 0rem 0rem;
+  padding: 0;
+  width: 150px;
+  background-color: var(--color-light-bg);
+} */
 
 @media screen and (max-width: 1040px) {
   .navbar {
@@ -81,52 +132,6 @@
     margin-bottom: 16px;
   }
 }
-
-navbar-menu svg {
-  cursor: pointer;
-}
-
-.navbar-menu_container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
-
-  text-align: end;
-  background: var(--color-footer);
-  padding: 2rem;
-  position: absolute;
-  right: 0;
-  top: 40px;
-  margin-top: 1rem;
-  min-width: 210px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-}
-
-.navbar-menu_container p {
-  margin: 1rem 0;
-}
-
-/* @media screen and (max-width: 600px) {
-  .navbar-links {
-    display: none;
-  }
-  .navbar-menu {
-    display: flex;
-  }
-} */
-
-/* @media screen and (max-width:1040px) {
-  .navbar {
-    background-color: var(--color-dark-bg);
-  }
-  .navbar:hover {
-    background-color: var(--color-light-bg);
-  }
-  
-} */
-
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: row;
