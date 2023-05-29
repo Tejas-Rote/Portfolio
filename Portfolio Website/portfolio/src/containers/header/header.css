@@ -27,7 +27,6 @@
 .header__info {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: flex-start;
 }
 .header__info-title {
@@ -40,7 +39,6 @@
   font-weight: 900;
   font-size: 64px;
   line-height: 67px;
-
   color: var(--color-mark-subtext);
 }
 
@@ -58,10 +56,7 @@
 }
 
 .header__info-subtitle h2 {
-  width: 18ch;
-  animation: typing 2s steps(18), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
-  overflow: hidden;
   border-right: 2px solid var(--color-mark-subtext);
   font-family: var(--font-family);
   font-style: normal;
@@ -73,44 +68,74 @@
   from {
     width: 0;
   }
+  to {
+    width: 18ch;
+  }
 }
+
+.header__info-subtitle h2 {
+  width: 20ch;
+  overflow: hidden;
+  white-space: no-wrap;
+  animation: typewriter 5s steps(20) infinite, blinking-cursor 0.8s  infinite;
+  animation-fill-mode: forwards
+}
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 70%;
+  }
+  48% {
+    width: 100%;
+  }
+  50% {
+    width: 100%;
+  }
+  55% {
+    width: 100%;
+  }
+  75% {
+    width: 70%;
+  }
+  85% {
+    width: 30%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blinking-cursor {
+  from { border-color: transparent }
+  to { border-color: var(--color-mark-subtext) }
+}
+
 
 @keyframes blink {
   50% {
     border-color: transparent;
   }
 }
-/* .header__info-text {
-  margin-bottom: 14px;
-} */
 
 .header__info-text p {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 21px;
+  line-height: 28px;
   color: var(--color-text);
 }
-
-/* .header__content-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../../assets/background.png");
-  background-repeat: no-repeat;
-  min-width: 600px;
-} */
 
 .header__image {
   position: relative;
 }
 
 .header__blob {
-  /* position: absolute; */
   width: 400px;
-  height: 4 00px;
+  height: 400px;
 }
 
 #blob {
@@ -122,23 +147,19 @@
   top: 0;
   left: 0;
   position: relative;
-  /* Adjust width and height to fit your SVG images */
   width: 500px;
   height: 300px;
 }
 
 .b1 {
-  /* Adjust positioning properties and other styles as needed */
   position: absolute;
 }
 
 .b1:nth-child(1) {
-  /* Adjust the z-index value to control stacking order */
   z-index: 2;
 }
 
 .b1:nth-child(2) {
-  /* Adjust the z-index value to control stacking order */
   z-index: 1;
 }
 .mask1 {
@@ -162,7 +183,6 @@
   animation-iteration-count: infinite;
   background-position: left bottom;
   background-repeat: repeat-y;
-  /* background-size: 120%; */
 }
 
 @keyframes slide {
@@ -174,42 +194,12 @@
   }
 }
 
-/* .scrolling-image-container {
-  border: 1px solid black ;
-  height:500px;
-  width: 500px;
-
-  overflow: hidden;
-}
-@keyframes slide {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-548px); 
-  }
-}
-
-.scrolling-image {
-  background: url("./background.png") repeat-y;
-  width: 600px;
-  height: 5480px;
-  animation: slide 10s linear infinite;
-} */
-
 .header__content-bottom {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  /* max-width: 1000px; */
-  /* margin: 4rem 16rem; */
 }
-/* header__content-bottom-info {
-  display: flex;
-  flex-direction: row  ;
-  align-items: center;
-} */
 
 .header__content-bottom-info {
   display: flex;
@@ -217,9 +207,6 @@
   align-items: center;
   justify-content: center;
   padding: 0rem 1rem;
-  /* max-width: 1000px; */
-  /* max-width: 1000px; */
-  /* margin: 4rem 16rem; */
 }
 
 .header__content-bottom p {
@@ -249,15 +236,15 @@
   justify-content: center;
 }
 
-.header__content-bottom-btn img{
-  margin-left: 0.5rem ;
+.header__content-bottom-btn img {
+  margin-left: 0.5rem;
 }
 .header__content-bottom-btn a {
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0.5rem .5rem;
+  margin: 0.5rem 0.5rem;
   padding: 0.5rem 1rem;
   font-family: var(--font-family);
   font-style: normal;

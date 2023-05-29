@@ -1,4 +1,3 @@
-// import React from 'react'
 import "./footer.css";
 import gfg from "../../assets/gfg.png";
 import twitter from "../../assets/twitter.png";

@@ -1,4 +1,3 @@
-// import React from 'react'
 import { Cards } from "../../components/index.js";
 import html from "../../assets/html.png";
 import javaS from "../../assets/javaS.png";
@@ -12,9 +11,20 @@ import react from "../../assets/react.png";
 import python from "../../assets/python.png";
 
 import "./skills.css";
-const Skills = () => {
-  // const html = "../../assets/html.png";
+const data = [
+  { imgsrc: html, title: "HTML" },
+  { imgsrc: javaS, title: "JavaScript" },
+  { imgsrc: css3, title: "CSS3" },
+  { imgsrc: react, title: "ReactJS" },
+  { imgsrc: python, title: "Python" },
+  { imgsrc: git, title: "Git" },
+  { imgsrc: arduino, title: "Arduino" },
+  { imgsrc: mongodb, title: "MongoDB" },
+  { imgsrc: java, title: "Java" },
+  { imgsrc: cplusplus, title: "C++" },
+];
 
+const Skills = () => {
   return (
     <div className="skills" id="skills">
       <div className="skills__content">
@@ -24,19 +34,9 @@ const Skills = () => {
         <div className="skills__content-tech">
           <div className=" skills__content-tech__card ">
             <div className="row">
-              <Cards imgsrc={html} title="HTML" />
-              <Cards imgsrc={javaS} title="JavaScript" />
-              <Cards imgsrc={css3} title="CSS3" />
-              <Cards imgsrc={react} title="ReactJS" />
-              <Cards imgsrc={python} title="Python" />
-
-              {/* </div> */}
-              {/* <div className="row"> */}
-              <Cards imgsrc={git} title="Git" />
-              <Cards imgsrc={arduino} title="Arduino" />
-              <Cards imgsrc={mongodb} title="MongoDB" />
-              <Cards imgsrc={java} title="Java" />
-              <Cards imgsrc={cplusplus} title="C++" />
+              {data.map((item, index) => (
+                <Cards key={index} imgsrc={item.imgsrc} title={item.title} />
+              ))}
             </div>
           </div>
         </div>

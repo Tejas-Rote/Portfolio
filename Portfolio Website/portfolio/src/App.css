@@ -3,8 +3,6 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  /* overflow: hidden; */
-  /* overflow-x: hidden; */
 }
 /* For WebKit-based browsers (Chrome, Safari) */
 ::-webkit-scrollbar {

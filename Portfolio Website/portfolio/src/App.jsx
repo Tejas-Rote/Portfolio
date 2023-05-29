@@ -1,14 +1,6 @@
-// import React from "react";
-// import CustomCard from "./components/CustomCard";
 import "./App.css";
-import { Navbar, Cards, Gallery } from "./components/index.js";
-import {
-  Header,
-  Skills,
-  Footer,
-  MyProject,
-  PetProject,
-} from "./containers/index.js";
+import { Navbar } from "./components/index.js";
+import { Header, Skills, Footer, MyProject } from "./containers/index.js";
 
 const App = () => {
   return (
@@ -20,8 +12,6 @@ const App = () => {
         <MyProject />
         <Footer />
       </div>
-      {/* <PetProject /> */}
-      {/* <Gallery /> */}
     </div>
   );
 };

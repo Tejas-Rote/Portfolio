@@ -1,18 +1,8 @@
-// import React from 'react'
 import "./work.css";
 import redirect from "../../assets/redirect.png";
 import github from "../../assets/github.png";
 
 const Work = (props) => {
-  // const { flexStyle } = props;
-  // console.log(props.link1);
-
-  // const containerClasses = classNames('flex-container', {
-  //   'projectCard': flexStyle === 'row',
-  //   'projectCardR': flexStyle === 'rowr',
-  //   // Add more class names for other flex styles as needed
-  // });
-
   return (
     <div className="work">
       <div className={props.flexStyle}>

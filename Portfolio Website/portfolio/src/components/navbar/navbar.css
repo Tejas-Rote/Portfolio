@@ -3,7 +3,6 @@
   top: 0;
   width: 100%;
   z-index: 3;
-  /* display: block; */
 }
 .navbar {
   display: flex;
@@ -14,9 +13,6 @@
   padding: 1rem;
   min-height: 80px;
   background-color: var(--color-dark-bg);
-}
-.navbar:hover {
-  /* background-color: var(--color-light-bg); */
 }
 
 .navbar-logo {
@@ -44,7 +40,6 @@
   font-size: 20px;
   line-height: 21px;
   text-transform: capitalize;
-
   margin: 0 1rem;
   cursor: pointer;
 }
@@ -57,7 +52,6 @@
   font-size: 20px;
   line-height: 21px;
   text-transform: capitalize;
-
   margin: 0 1rem;
   cursor: pointer;
   text-decoration: none;
@@ -66,10 +60,6 @@
 a:hover {
   color: var(--color-mark-subtext);
 }
-
-/* .navbar-links a.active {
-  color: var(--color-mark-subtext);
-} */
 
 navbar-menu svg {
   cursor: pointer;
@@ -80,7 +70,6 @@ navbar-menu svg {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   text-align: center;
   background: var(--color-dark-bg);
   padding: 1rem;
@@ -96,29 +85,6 @@ navbar-menu svg {
 .navbar-menu_container p {
   margin: 1rem 0;
 }
-
-/* .navbar-menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 0rem;
-  padding: 0rem;
-}
-.navbar-menu_container {
-  display: flex;
-  flex-direction: column;
-  margin: 0rem 0rem;
-  padding: 0;
-  background-color: antiquewhite;
-}
-
-.navbar-menu_container-links {
-  margin: 0rem 0rem;
-  padding: 0;
-  width: 150px;
-  background-color: var(--color-light-bg);
-} */
 
 @media screen and (max-width: 1040px) {
   .navbar {

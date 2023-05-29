@@ -6,10 +6,6 @@ import "./navbar.css";
 import { useState } from "react";
 
 const Navbar = () => {
-
-
-
-
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -19,9 +15,10 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="navbar-links">
-          {/* <div className="navbar-links_container"> */}
           <p>
-            <a href="#aboutme" className="active">About Me</a>
+            <a href="#aboutme" className="active">
+              About Me
+            </a>
           </p>
           <p>
             <a href="#skills">Skills</a>
@@ -32,12 +29,7 @@ const Navbar = () => {
           <p>
             <a href="#contacts">Contacts</a>
           </p>
-          {/* </div> */}
         </div>
-        {/* <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
-      </div> */}
         <div className="navbar-menu">
           {toggleMenu ? (
             <RiCloseLine
@@ -68,10 +60,6 @@ const Navbar = () => {
                   <a href="#contacts">Contacts</a>
                 </p>
               </div>
-              {/* <div className="gpt3__navbar-menu_container-links-sign">
-              <p>Sign in</p>
-              <button type="button">Sign up</button>
-            </div> */}
             </div>
           )}
         </div>

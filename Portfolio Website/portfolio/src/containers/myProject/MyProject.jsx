@@ -2,7 +2,6 @@
 import { Gallery, Work } from "../../components";
 import "./myProject.css";
 import NFT from "../../assets/nft-alt.png";
-import nft from "../../assets/nft.png";
 import gpt3 from "../../assets/gpt3-alt.png";
 import uav from "../../assets/teamuav-alt.png";
 import order from "../../assets/OrderSummary-alt.png";
@@ -37,7 +36,7 @@ const MyProject = () => {
             imgsrc={uav}
             stack={"MERN "}
             info={
-              "Introducing Team UAV! We are a dedicated college team passionate about unmanned aerial vehicles (UAVs). Visit our website to get to know us better. Learn about our team members, the various departments within our team, and our past achievements. Discover the exciting world of UAVs and our contributions to the field. Join us as we explore the possibilities of this cutting-edge technology and showcase our passion for innovation and teamwork."
+              "Introducing Team UAV! We are a dedicated college team passionate about unmanned aerial vehicles (UAVs). Visit our website to get to know us better. Learn about our team members, the various departments within our team, and our past achievements."
             }
             code={"https://github.com/TeamUAV/Website"}
             live={"links2"}

@@ -1,9 +1,9 @@
-// import React from 'react'
+
 import "./cards.css";
 
 const Card = (props) => {
   console.log(props);
-  // const imagePath = `../images/${logo}` ;
+
   return (
     <div className="card">
       <div className="card__content">
